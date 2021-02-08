@@ -1,16 +1,13 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello! I am a Computer Science student interested in Cybersecurity and I enjoy participating in CTFs to learn more about the field. In this blog, I will be posting my writeups to the CTFs I have participated in. Enjoy!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+## CTFs 
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### 2021
+- 28 January 2021: CSA-Cisco Cyber Youth Challenge (28th)
+- 6 February 2021: TrollCat CTF (23rd)
