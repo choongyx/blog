@@ -29,12 +29,12 @@ Opening the mp3 file in Audacity and playing the song, we observe that there are
 
 ![Alien Message Waveform](../assets/img/2021-02-08-Trollcat-CTF/AlienMessage.png){: .mx-auto.d-block :}
 
-The beeping sounds resemble morse code. Converting the waveform to morse code by representing the wider bars as "-" and thinner bars as ".', we get the following morse code: "- .-. --- .-.. .-.. -.-. .- - -.-. - ..-. -... .-. --- ..- --. .... - - --- -.-- --- ..- -... -.-- -.-. ... -.-. --- -.. . .-. ... .... ..- -...". When decoded, it gives us the flag "TROLLCATCTFBROUGHTTOYOUBYCSCODERSHUB".
+The beeping sounds resemble morse code. Converting the waveform to morse code by representing the wider bars as "-" and thinner bars as ".", we get the following morse code: "- .-. --- .-.. .-.. -.-. .- - -.-. - ..-. -... .-. --- ..- --. .... - - --- -.-- --- ..- -... -.-- -.-. ... -.-. --- -.. . .-. ... .... ..- -...". When decoded, it gives us the flag "TROLLCATCTFBROUGHTTOYOUBYCSCODERSHUB".
 
 ### Trolling Cat
 
 {: .box-note}
-Don't mess with my cat. [Download File](https://drive.google.com/file/d/1OlHig8YlpeZ2KlbsYSgAP0jrjSz8JrFt/view?usp=sharing)
+Don't mess with my cat. [Download File](https://drive.google.com/file/d/1OlHig8YlpeZ2KlbsYSgAP0jrjSz8JrFt/view?usp=sharing).
 You Might Find Password on my social media if you need it ;)
 
 Opening the .rar file, we see a .png image inside. 
