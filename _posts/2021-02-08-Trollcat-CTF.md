@@ -5,7 +5,7 @@ tags: [CTF, 2021]
 comments: true
 ---
 
-Over the weekends, I participated in TrollCat CTF, a CTF organized by CSCodersHub in India and [placed 23rd](https://ctftime.org/event/1257). Here are the write-ups for the challenges, including some challenges that I did not manage to solve during the CTF itself. Enjoy! 
+Over the weekends, I participated in TrollCat CTF, a CTF organized by CSCodersHub in India and [placed 23rd](https://ctftime.org/event/1257). Here are the write-ups for some of the challenges. Enjoy! 
 
 ## Stegnography
 
@@ -125,6 +125,25 @@ Using the password to mount the tool, we opened the drive only to find a file na
 I then opened the drive in Autopsy and found a deleted file dont_open_it.txt which contains the flag!
 
 ![Flag](../assets/img/2021-02-08-Trollcat-CTF/the_sus_agent_Flag.png){: .mx-auto.d-block :}
+
+## Mr_evilpepo_1
+
+{: .box-note}
+We have caught Mr.EvilPepo and now it is time for you to investigate him we searched his house and we got not much proof we got some report from OSINT department and Our OSINT Investigator told us that he mentioned on his socials "Hack Me if you can, i use same password Everywhere" we have dumped his computer memory and for further investigation we need your help. he typed the flag command somewhere and now he forgot it. can you find it? [File.](https://mega.nz/file/y90gWRJa#6lJ4qpKw3bfLKvbcTuvcOgGdDpYS9AapC_mwKM-4Zg4)
+
+The provided file is a .7z file which contains a .vmem file. We extract the .vmem file and then run volatility. We use the imageinfo command to get the suggested profiles to use.
+
+![Imageinfo](../assets/img/2021-02-08-Trollcat-CTF/Mr_evilpepo_1_Imageinfo.png){: .mx-auto.d-block :}
+
+Since the challenge description said that Mr.EvilPepo typed the flag command somewhere, let's check the commands he executed on cmd.exe using the suggested profile Win7SP1x64. From the output, we can see the flag is Trolcat{comands_4re_important}!
+
+![Cmdscan](../assets/img/2021-02-08-Trollcat-CTF/Mr_evilpepo_1_Cmdscan.png){: .mx-auto.d-block :}
+
+## Mr_evilpepo_2
+
+{: .box-note}
+Now After some good beating, Mr.EvilPepo saying he hides something on the internet. find it
+
 
 
 
