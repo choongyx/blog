@@ -14,7 +14,7 @@ This time, I participated in a CTF held by DSO and NUS. This was the most challe
 {: .box-note}
 Someone once told me that SUID is a bad idea. Could you show me why?
 
-This challenge involved using a SUID-enabled program `insecure` which temporarily elevates its privileges and calls another program `id`, to read `flag.txt` which we do not have permissions to read.
+This challenge involved using a SUID-enabled program `insecure` which temporarily elevates its privileges and calls another program `id`. We need to exploit it to read `flag.txt` which we do not have permissions to read.
 
 What I did was to create another program `id` which runs `cat flag.txt` and stored it in `/tmp`. In order to allow `insecure` to call this `/tmp/id` instead of `bin/id`, I updated the PATH variable to `/tmp`. When the  `insecure` program runs, `tmp/id` is called and the flag will be printed. 
 
