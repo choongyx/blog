@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trollcat CTF Feb 2021
+title: Trollcat CTF 2021
 tags: [CTF, 2021]
 comments: true
 ---
