@@ -139,12 +139,6 @@ Since the challenge description said that Mr.EvilPepo typed the flag command som
 
 ![Cmdscan](../assets/img/2021-02-08-Trollcat-CTF/Mr_evilpepo_1_Cmdscan.png){: .mx-auto.d-block :}
 
-## Mr_evilpepo_2
-
-{: .box-note}
-Now After some good beating, Mr.EvilPepo saying he hides something on the internet. find it
-
-
 
 
 
