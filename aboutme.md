@@ -10,3 +10,4 @@ Hello! I am a Computer Science student interested in Cybersecurity and I enjoy p
 ### 2021
 - 28 January 2021: CSA-Cisco Cyber Youth Challenge (28th)
 - 6 February 2021: TrollCat CTF (23rd) 
+- 27-28 February 2021: DSO-NUS CTF (58th)
