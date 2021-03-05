@@ -58,11 +58,11 @@ Emulating the apk on Android Studio, we can see that the mobile application cont
 
 We first use `apktool` to disassemble `login.apk` using the command `apktool -d login.apk`. We also open login.apk in `jadx` to convert DEX/Smali code to Java which is easier to read.
 
-We find the following function which checks whether the credentials are correct. From the first `if` statement, we can see that the userid is `5573657231333337` which convert to string from hex is `User1337`.
+We find the following function which checks whether the credentials are correct. From the first `if` statement, we can see that the userid is `5573657231333337` which if we convert to string from hex is `User1337`.
  
 ![Flag](../assets/img/2021-02-28-DSO-NUS-CTF/login1.png){: .mx-auto.d-block :}
 
-The second `if` statement shows that the first 4 characters of the password is compareed to `getJavaPassword()`. 
+The second `if` statement shows that the first 4 characters of the password is compared to `getJavaPassword()`. 
 
 ![Flag](../assets/img/2021-02-28-DSO-NUS-CTF/login2.png){: .mx-auto.d-block :}
 
@@ -76,7 +76,7 @@ Tracing the code, we can see that we need to use AES to decode `7470CB2F2412053D
 
 Decoding the base64 string, we get `L1v3` which is the first 4 characters of the password.
 
-The third `if` statement shows that the remaining portion of the password is checked against `getNativePassword()` which is a native function and we can see that a library was loaded.
+The third `if` statement shows that the remaining portion of the password is checked against `getNativePassword()` which is a native function and we can see that a library `ddea` was loaded.
 
 ![Flag](../assets/img/2021-02-28-DSO-NUS-CTF/login6.png){: .mx-auto.d-block :}
 
@@ -110,7 +110,7 @@ Going to the logcat terminal, we see the flag!
 Reverse the binary, understand the conditions, dust out your math textbooks and solve the trials!
  [Download File](https://nusdsoctf2.s3-ap-southeast-1.amazonaws.com/S3/Three_trials/three_trials).
 
-Open the file in Ghidra, we go to the `entry` function and see that the program checks for 3 integer input which are then processed using a function each.
+Opening the file in Ghidra, we navigate to the `entry` function and see that the program checks for a 3 integer input which are then processed using a function each.
 
 ![Flag](../assets/img/2021-02-28-DSO-NUS-CTF/threetrials1.png){: .mx-auto.d-block :}
 
@@ -126,9 +126,12 @@ The third function checks that the number is the sum of its factors, aka Perfect
 
 From [Wikipedia](https://en.wikipedia.org/wiki/List_of_perfect_numbers), the only perfect number between 10^5 and 10^8 is 33550336. Hence, the third number is 33550336.
 
-For the second number, the function checks that for the square of the number, when split into 2, if the sum of the 2 numbers = the number itself. So for example, given a number x = 9
+For the second number, the function checks that for the square of the number, when split into 2, if the sum of the 2 numbers = the number itself. So for example, given a number x = 9.
+
 x^2 = 81
-Cut x^2 by 10^n where n is any number < no. of digits in x^2 e.g n=1
+
+Cut x^2 by 10^n where n is any number < no. of digits in x^2 e.g n=1.
+
 Sum = 8 + 1 = 9 which is x.
 
 ![Flag](../assets/img/2021-02-28-DSO-NUS-CTF/threetrials4.png){: .mx-auto.d-block :}
